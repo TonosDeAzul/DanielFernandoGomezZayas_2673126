@@ -1,6 +1,6 @@
 /* 
 
-    MOBILE
+    DESKTOP
 
 */
 *{
@@ -34,9 +34,7 @@ body{
     max-width: 1200px;
     display: grid;
     grid-template: 
-        "navbar navbar" auto
-        "main main" auto / 1fr 1fr
-    ;
+        "navbar main main slidebar" 1fr / 1fr 1fr 1fr 1fr;
 }
 
 
@@ -45,7 +43,7 @@ body{
 */
 .navbar{
     grid-area: navbar;
-    height: 60px;
+    height: 60vh;
     width: 100%;
     background-color: aquamarine;
 }
@@ -55,9 +53,9 @@ body{
     SLIDEBAR
 */
 .slidebar{
-    display: none;
+    /* display: none; */
     grid-area: slidebar;
-    height: 60px;
+    height: 60vh;
     width: 100%;
     background-color: beige;
 }
@@ -74,31 +72,30 @@ body{
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
 
     .container{
         grid-template: 
             "navbar main main" 1fr / 1fr 1fr 1fr;
     }
 
-    .navbar{
-        min-height: 60vh;
+    .slidebar{
+        display: none;
     }
 
 }
 
 
+@media screen and (max-width: 425px){
 
-@media screen and (min-width: 1024px){
-    
     .container{
         grid-template: 
-            "navbar main main slidebar" 1fr / 1fr 1fr 1fr 1fr;
+            "navbar navbar" auto
+            "main main" auto / 1fr 1fr;
     }
 
-    .slidebar{
-        display: inline-block;
-        min-height: 60vh;
+    .navbar{
+        height: 60px;
     }
 
 }
