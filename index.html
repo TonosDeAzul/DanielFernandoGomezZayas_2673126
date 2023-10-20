@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FIRTS MOBILE -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- FIRST DESKTOP -->
     <!-- <link rel="stylesheet" href="style2.css"> -->
+
     <title>GRID Layout</title>
 </head>
 <body>
@@ -12,12 +17,15 @@
     <header class="header">
         <div class="header__container">
             <div>
-                <h2 class="header__title">DEV</h2>
-                <input class="header__search" type="search" placeholder="Search...">
+                <img class="header__logo" src="images/Daniel Gómez Zayas (2673126).png" alt="Logo">
+                <input id="search" class="header__search" type="search" placeholder="Search...">
+                <label class="header__searchIcon" for="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
             </div>
             <div>
                 <a class="header__button" href="#">Login</a>
-                <a class="header__button header__button--mod" href="#">Register</a>
+                <a class="header__button header__button--mod" href="#">Create account</a>
             </div>
         </div>
     </header>
@@ -26,7 +34,55 @@
     <div class="container">
 
         <nav class="navbar">
-
+            <div class="navbar__desktop">
+                <ul class="navbar__ul">
+                    <a href="">
+                        <li><i class="fa-solid fa-house"></i>Home</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-solid fa-microphone"></i>Podcasts</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-solid fa-video"></i>Videos</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-solid fa-tag"></i>Tags</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-solid fa-lightbulb"></i>FAQ</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-solid fa-heart"></i>Advertise on DEV</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-brands fa-dev"></i>About</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-solid fa-address-book"></i>Contact</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-solid fa-book"></i>Guides</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-solid fa-not-equal"></i>Software comparisons</li>
+                    </a>
+                </ul>
+                <br>
+                <br>
+                <p>Other</p>
+                <br>
+                <ul class="navbar__ul">
+                    <a href="">
+                        <li><i class="fa-solid fa-thumbs-up"></i>Code of Conduct</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-solid fa-file-shield"></i>Privacy Policy</li>
+                    </a>
+                    <a href="">
+                        <li><i class="fa-solid fa-eye"></i>Terms of use</li>
+                    </a>
+                </ul>
+            </div>
         </nav>
     
     
@@ -42,6 +98,9 @@
     </div>
 
 
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/8c09098255.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
