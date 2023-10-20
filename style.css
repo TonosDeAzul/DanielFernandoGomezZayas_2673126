@@ -25,6 +25,9 @@
 
     /* Principal padding in forms */
     --paddingForms: 21px 30px 21px 8px;
+
+    /* Transición */
+    --transition: all 200ms ease-out;
 }
 
 
@@ -69,22 +72,24 @@ body{
 .header__container .header__search{
     margin-left: 15px;
     border-radius: var(--borderRadius);
-    border: 1px solid rgba(116, 116, 116, 0.6);
-    outline: none;
+    outline: 1px solid rgba(116, 116, 116, 0.6);
     padding: var(--paddingForms);
     width: 400px;
     height: 40px;
     display: none;
+    border: none;
 }
 .header__container .header__searchIcon{
+    display: none;
     position: absolute;
     right: 10px;
-    font-size: 20px;
+    font-size: 24px;
 }
 .header__container .header__search:focus{
     overflow: hidden;
     border: none;
     outline: 2px solid #3057a3;
+    transition: var(--transition);
 }
 .header__container .header__search::placeholder{
     font-size: var(--fontSize);
@@ -94,12 +99,19 @@ body{
     text-decoration: none;
     color: #000;
     display: none;
+    transition: var(--transition);
+    border-radius: var(--borderRadius);
+}
+.header__container .header__button:hover{
+    background-color: rgba(48, 86, 163, .15);
+    color: #3057a3;
+    text-decoration: underline;
 }
 .header__container .header__button--mod{
     outline: none;
-    border-radius: var(--borderRadius);
     border: 1px solid #3057a3;
     color: #3057a3;
+    display: inline-block;
 }
 .header__container .header__button--mod:hover{
     background-color: #3057a3;
@@ -127,14 +139,18 @@ body{
     NAVBAR
 */
 .navbar{
-    outline: 1px solid #1d1d1d;
+    outline: 1px solid rgba(29, 29, 29, 0.1);
+    border-radius: var(--borderRadius);
     color: #1d1d1d;
     grid-area: navbar;
-    height: 60px;
+    /* height: 60px; */
     width: 100%;
     /* background-color: aquamarine; */
     font-size: var(--fontSize);
+    padding: 10px;
 }
+
+/* NAVBAR DESKTOP */
 .navbar__desktop{
     display: none;
 }
@@ -150,6 +166,7 @@ body{
     border-radius: var(--borderRadius);
     padding: 13px 10px;
     list-style: none;
+    transition: var(--transition);
 }
 .navbar__ul a li:hover{
     background-color: #3057a3;
@@ -161,18 +178,62 @@ body{
     padding-right: 5px;
 }
 
+/* NAVBAR MOBILE */
+.nav__mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.nav__mobile--iconMod{
+    font-size: 30px;
+    cursor: pointer;
+}
+.check__menu{
+    display: none;
+}
+.check__menu:checked~.nav__mobile__responsive
+{
+    opacity: 1;
+    pointer-events: unset;
+}
+.nav__mobile__responsive{
+    box-shadow: 0px 0px 20px rgba(29, 29, 29, .8);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 260px;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition);
+}
+.nav__mobile__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.nav__mobile__title p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 /* 
     SLIDEBAR
 */
 .slidebar{
-    outline: 1px solid #1d1d1d;
+    outline: 1px solid rgba(29, 29, 29, 0.1);
+    border-radius: var(--borderRadius);
     color: #1d1d1d;
     display: none;
     grid-area: slidebar;
     height: 60px;
     width: 100%;
-    /* background-color: beige; */
+    background-color: #fff;
     font-size: var(--fontSize);
 }
 
@@ -181,12 +242,13 @@ body{
     MAIN
 */
 .main{
-    outline: 1px solid #1d1d1d;
+    outline: 1px solid rgba(29, 29, 29, 0.1);
+    border-radius: var(--borderRadius);
     color: #1d1d1d;
     grid-area: main;
     height: 100vh;
     width: 100%;
-    /* background-color: bisque; */
+    background-color: #fff;
     font-size: var(--fontSize);
 }
 
@@ -194,13 +256,21 @@ body{
 @media screen and (min-width: 768px){
 
     .container{
-        padding: 5px;
+        padding: 10px;
         grid-template: 
             "navbar main main" 1fr / .75fr 1fr 1fr;
-        gap: 5px;
+        gap: 10px;
     }
 
     .header__container .header__button{
+        display: inline-block;
+    }
+
+    .header__container .header__searchIcon{
+        display: inline-block;
+    }
+
+    .header__container .header__search{
         display: inline-block;
     }
 
@@ -210,6 +280,10 @@ body{
 
     .navbar__desktop{
         display: block;
+    }
+
+    .nav__mobile{
+        display: none;
     }
 
 }
@@ -223,10 +297,6 @@ body{
         grid-template: 
             "navbar main main slidebar" 1fr / .75fr 1fr 1fr 1fr;
         gap: 15px;
-    }
-
-    .header__container .header__search{
-        display: inline-block;
     }
 
     .header__container .header__button{
