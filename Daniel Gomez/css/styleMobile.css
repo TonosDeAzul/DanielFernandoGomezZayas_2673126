@@ -15,23 +15,22 @@
     VARIABLES
 */
 :root{
-    /* Princiapl font-size */
     --fontSize: 14px;
-
-    /* Principal border-radius */
-    --borderRadius: 6px;
-
-    /* Principal padding in buttons */
     --paddingButtons: 13px 24px;
-
-    /* Principal padding in forms */
     --paddingForms: 21px 30px 21px 8px;
-
-    /* Transición */
     --transition: all 150ms ease-out;
-
-    /* Principal color */
-    --color: #1d1d1d;
+    --dark: #1d1d1d;
+    --light: #fff;
+    --bor: 6px;
+    --sp-5: 5px;
+    --sp-10: 10px;
+    --sp-15: 15px;
+    --sp-20: 20px;
+    --sp-25: 25px;
+    --sp-30: 30px;
+    --w-100: 100%;
+    --fs-1: 14px;
+    --fs-2: 24px;
 }
 
 
@@ -451,31 +450,64 @@ body{
 }
 
 
+/* SHORTCUT */
+.ta-center{
+  text-align: center;
+}
+.rounded{
+  border-radius: var(--bor);
+}
+
+
+/* 
+  COMPONENTES FORMULARIO
+*/
+.container-md{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--w-100);
+  min-height: 100vh;
+  font-size: var(--fs-1);
+}
+.container-form{
+  width: var(--w-100);
+  max-width: 350px;
+  background-color: var(--light);
+  padding: var(--sp-30);
+  outline: 1px solid rgba(29, 29, 29, .1);
+}
+.form-title{
+  display: block;
+  color: var(--dark);
+  font-size: var(--fs-2);
+  margin-bottom: 40px;
+}
+.form-input{
+  width: var(--w-100);
+  padding: var(--sp-10);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--dark);
+}
+.form-button{
+  color: var(--light);
+  margin-top: var(--sp-10);
+  margin-bottom: var(--sp-10);
+  width: var(--w-100);
+  padding-top: var(--sp-15);
+  padding-bottom: var(--sp-15);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+
 /* 
     RAMA LOGIN
 */
-.containerLogin{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    font-size: var(--fontSize);
-    color: var(--color);
-}
-.containerLogin__form{
-    text-align: center;
-    width: 100%;
-    max-width: 350px;
-    background-color: #fff;
-    border-radius: var(--borderRadius);
-    padding: 20px;
-    outline: 1px solid rgba(29, 29, 29, .1);
-}
-.form__title{
-    margin-bottom: 30px;
-}
 .form__item{
     width: 100%;
     margin: 20px 0px;
@@ -485,28 +517,9 @@ body{
 .form__item label{
     padding-left: 10px;
 }
-.item__input{
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-}
 .item__input:focus{
     background-color: none;
     border-bottom: 2px solid var(--color);
-}
-.form__button{
-    color: #fff;
-    margin: 10px 0px;
-    width: 100%;
-    padding: 15px 0px;
-    border: none;
-    outline: none;
-    background-color: var(--color);
-    border-radius: var(--borderRadius);
-    font-size: var(--fontSize);
-    cursor: pointer;
 }
 .form__button:hover{
     text-decoration: underline;
