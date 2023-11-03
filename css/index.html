@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mycss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Contenedor para el cabecero de la plantilla -->
+    <header class="header">
+        <div class="header__container">
+            <span>
+                <button class="header__hamburger hidden">
+                    <i class="fa fa-navicon font-size-2"></i>
+                </button>
+            </span>
+            <a href="#" class="header__logo">
+                <img class="header__img mx-2" src="assets/img/logo.png" alt="logo">
+            </a>
+            <div class="header__search">
+                <form action="" role="search">
+                    <div class="fields">
+                        <input type="text" class="fields__text" placeholder="Buscar...">
+                        <button type="submit" class="fields__button">
+                            <i class="fields__icon fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="header__box">
+                <nav class="box">
+                    <a href="#" class="btn__search mr-2">
+                        <i class="fa fa-search font-size-2"></i>
+                    </a>
+                    <a href="#" class="box__link mr-2 btn__login">Ingresar</a>
+                    <a href="#" class="box__link box__link--boder box__link--hover">Crear cuenta</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor para el layout o plantilla -->
+    <div class="content-layout">
+        <!-- Contenedor para la sección de navegación -->
+        <div class="navbar">
+            <!-- Contenedor para el login - registro  -->
+            <div class="card pa-15">
+                <h1 class="card-menu__title">¿Tienes una cuenta?</h1>
+                <p class="card-menu__text mb-1">
+                    Ingresa con tus datos de usuario. Tambien puedes crear una cuenta en el botón crear cuenta.
+                </p>
+                <div>
+                    <a href="#" class="box__link justify-center mb-1">Ingresar</a>
+                    <a href="#" class="box__link box__link--boder box__link--hover justify-center">Crear cuenta</a>
+                </div>
+            </div>
+            <!-- Contenedor para el menu -->
+            <nav class="navigation mt-2 mb-2 sticky">
+                <ul class="navigation__list">
+                    <li>
+                        <a href="#" class="navigation__link">
+                            <i class="fa fa-home mr-1"></i><span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation__link">
+                            <i class="fa fa-book-open mr-1"></i><span>Guias</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation__link">
+                            <i class="fa fa-video-camera mr-1"></i><span>Noticias</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation__link">
+                            <i class="fa fa-tags mr-1"></i><span>Tags</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation__link">
+                            <i class="fa fa-address-book mr-1"></i><span>Contactenos</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Sección principal de la plantilla -->
+        <main class="main">
+            <article class="card">
+                <div class="">
+                    <div class="">
+
+                    </div>
+                    <div class="">
+                        <a href="#" class="card-title ma-10__btm">
+                            Titulo del post
+                        </a>
+                        <p class="ma-10__btm">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+                            quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+                            impedit excepturi quia saepe adipisci dolorum?
+                        </p>
+                        <div class="">
+                            <a href="#" class="card-tag bg-black col-white rounded">
+                                <span class="">#</span>Tag 1
+                            </a>
+                            <a href="#" class="card-tag">
+                                <span class="">#</span>Tag 2
+                            </a>
+                            <a href="#" class="card-tag">
+                                <span class="">#</span>Tag 3
+                            </a>
+                            <a href="#" class="card-tag">
+                                <span class="">#</span>Tag 4
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+              
+              <h2 class="card-title ma-10__btm">Titulo card</h2>
+              <p class="card-paragraph ma-10__btm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam aut eligendi hic rem eum similique omnis, incidunt sapiente asperiores animi obcaecati, saepe nesciunt? Asperiores non cumque doloremque, error velit magnam.</p>
+              <div>
+                <a href="#" class="card-tag bg-black col-white rounded">#tag1</a>
+                <a href="#" class="card-tag">#tag2</a>
+                <a href="#" class="card-tag">#tag3</a>
+                <a href="#" class="card-tag">#tag4</a>
+              </div>
+
+            </article>
+
+            <!-- <article class="card-post">
+                <div class="card-post__body">
+                    <div class="card-post__top">
+
+                    </div>
+                    <div class="card-post__content">
+                        <a href="#" class="card-post__title">
+                            Titulo del post
+                        </a>
+                        <p class="card--post__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+                            quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+                            impedit excepturi quia saepe adipisci dolorum?
+                        </p>
+                        <div class="card--post__tags">
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 1
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 2
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 3
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 4
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article> -->
+
+            <!-- <article class="card-post">
+                <div class="card-post__body">
+                    <div class="card-post__top">
+
+                    </div>
+                    <div class="card-post__content">
+                        <a href="#" class="card-post__title">
+                            Titulo del post
+                        </a>
+                        <p class="card--post__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+                            quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+                            impedit excepturi quia saepe adipisci dolorum?
+                        </p>
+                        <div class="card--post__tags">
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 1
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 2
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 3
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 4
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-post">
+                <div class="card-post__body">
+                    <div class="card-post__top">
+
+                    </div>
+                    <div class="card-post__content">
+                        <a href="#" class="card-post__title">
+                            Titulo del post
+                        </a>
+                        <p class="card--post__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+                            quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+                            impedit excepturi quia saepe adipisci dolorum?
+                        </p>
+                        <div class="card--post__tags">
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 1
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 2
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 3
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 4
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-post">
+                <div class="card-post__body">
+                    <div class="card-post__top">
+
+                    </div>
+                    <div class="card-post__content">
+                        <a href="#" class="card-post__title">
+                            Titulo del post
+                        </a>
+                        <p class="card--post__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+                            quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+                            impedit excepturi quia saepe adipisci dolorum?
+                        </p>
+                        <div class="card--post__tags">
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 1
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 2
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 3
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 4
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-post">
+                <div class="card-post__body">
+                    <div class="card-post__top">
+
+                    </div>
+                    <div class="card-post__content">
+                        <a href="#" class="card-post__title">
+                            Titulo del post
+                        </a>
+                        <p class="card--post__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+                            quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+                            impedit excepturi quia saepe adipisci dolorum?
+                        </p>
+                        <div class="card--post__tags">
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 1
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 2
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 3
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 4
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-post">
+                <div class="card-post__body">
+                    <div class="card-post__top">
+
+                    </div>
+                    <div class="card-post__content">
+                        <a href="#" class="card-post__title">
+                            Titulo del post
+                        </a>
+                        <p class="card--post__paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quam quibusdam
+                            quidem possimus! Explicabo omnis, totam, exercitationem at aperiam magni quidem ullam veniam
+                            impedit excepturi quia saepe adipisci dolorum?
+                        </p>
+                        <div class="card--post__tags">
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 1
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 2
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 3
+                            </a>
+                            <a href="#" class="tags">
+                                <span class="tags__prefix">#</span>Tag 4
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article> -->
+
+        </main>
+        <!-- ontenedor para la sección informativa -->
+        <aside class="sidebar">
+            <section class="card pa-n">
+                <header class="card__header">
+                    <h3 class="card_title">
+                        Noticias
+                    </h3>
+                </header>
+                <div class="">
+                    <a href="#" class="card__link">
+                        Lorem, ipsum dolor si
+                        <div class="card__link--secundary">2023/10/14</div>
+                    </a>
+                    <a href="#" class="card__link">
+                        Adipisicing elit. Adipisci rerum mollitia aperiam!
+                        <div class="card__link--secundary">2023/10/14</div>
+                    </a>
+                    <a href="#" class="card__link">
+                        Ipsum dolor
+                        <div class="card__link--secundary">2023/10/14</div>
+                    </a>
+                    <a href="#" class="card__link">
+                        Lorem, ipsum dolor Adipisci rerum mollitia aperiam!
+                        <div class="card__link--secundary">2023/10/14</div>
+                    </a>
+                    <a href="#" class="card__link">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum mollitia aperiam!
+                        <div class="card__link--secundary">2023/10/14</div>
+                    </a>
+                </div>
+            </section>
+        </aside>
+    </div>
+
+</body>
+
+</html>
