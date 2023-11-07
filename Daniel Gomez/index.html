@@ -1,538 +1,622 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FIRTS MOBILE -->
-    <link rel="stylesheet" href="css/styleMobile.css">
+    <link rel="stylesheet" href="css/styleMobile.css" />
 
     <!-- FIRST DESKTOP -->
     <!-- <link rel="stylesheet" href="css/styleDesktop.css"> -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>GRID Layout</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <header class="header">
-        <div class="header__container">
-            <div>
-                <a href="index.html">
-                    <img class="header__logo" src="images/Daniel Gómez Zayas (2673126).png" alt="Logo">
-                </a>
-                <input id="search" class="header__search" type="search" placeholder="Search...">
-                <label class="header__searchIcon" for="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </label>
-            </div>
-            <div>
-                <a class="header__button" href="indexLogin.html">Login</a>
-                <a class="header__button header__button--mod" href="indexRegister.html">Create account</a>
-            </div>
+      <div class="header__container">
+        <div>
+          <a href="index.html">
+            <img
+              class="header__logo"
+              src="images/Daniel Gómez Zayas (2673126).png"
+              alt="Logo"
+            />
+          </a>
+          <input
+            id="search"
+            class="header__search"
+            type="search"
+            placeholder="Search..."
+          />
+          <label class="header__searchIcon" for="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
         </div>
+        <div>
+          <a class="header__button" href="indexLogin.html">Login</a>
+          <a
+            class="header__button header__button--mod"
+            href="indexRegister.html"
+            >Create account</a
+          >
+        </div>
+      </div>
     </header>
 
-
     <div class="container">
+      <nav class="navbar">
+        <div class="navbar__desktop">
+          <div class="navbar__info">
+            <h2 class="navbar__info--title">
+              DEV Community is a community of 1,175,465 amazing developers
+            </h2>
+            <p class="navbar__info--text">
+              We're a place where coders share, stay up-to-date and grow their
+              careers.
+            </p>
+            <div>
+              <a
+                href="indexRegister.html"
+                class="navbar__infoLinks navbar__infoLinks--link"
+                >Create account</a
+              >
+              <a href="indexLogin.html" class="navbar__infoLinks">Login</a>
+            </div>
+          </div>
 
-        <nav class="navbar">
-            <div class="navbar__desktop">
+          <ul class="navbar__ul">
+            <a href="">
+              <li><i class="fa-solid fa-house"></i>Home</li>
+            </a>
+            <a href="">
+              <li><i class="fa-solid fa-microphone"></i>Podcasts</li>
+            </a>
+            <a href="">
+              <li><i class="fa-solid fa-video"></i>Videos</li>
+            </a>
+            <a href="">
+              <li><i class="fa-solid fa-tag"></i>Tags</li>
+            </a>
+            <a href="">
+              <li><i class="fa-solid fa-lightbulb"></i>FAQ</li>
+            </a>
+            <a href="">
+              <li><i class="fa-solid fa-heart"></i>Advertise on DEV</li>
+            </a>
+            <a href="">
+              <li><i class="fa-brands fa-dev"></i>About</li>
+            </a>
+            <a href="">
+              <li><i class="fa-solid fa-address-book"></i>Contact</li>
+            </a>
+            <a href="">
+              <li><i class="fa-solid fa-book"></i>Guides</li>
+            </a>
+            <a href="">
+              <li><i class="fa-solid fa-not-equal"></i>Software comparisons</li>
+            </a>
+          </ul>
+          <br />
+          <br />
+          <p>Other</p>
+          <ul class="navbar__ul">
+            <a href="">
+              <li><i class="fa-solid fa-thumbs-up"></i>Code of Conduct</li>
+            </a>
+            <a href="">
+              <li><i class="fa-solid fa-file-shield"></i>Privacy Policy</li>
+            </a>
+            <a href="">
+              <li><i class="fa-solid fa-eye"></i>Terms of use</li>
+            </a>
+          </ul>
+        </div>
 
-                <div class="navbar__info">
-                    <h2 class="navbar__info--title">DEV Community is a community of 1,175,465 amazing developers</h2>
-                    <p class="navbar__info--text">We're a place where coders share, stay up-to-date and grow their careers.</p>
-                    <div>
-                        <a href="indexRegister.html" class="navbar__infoLinks navbar__infoLinks--link">Create account</a>
-                        <a href="indexLogin.html" class="navbar__infoLinks">Login</a>
-                    </div>
-                </div>
+        <div class="nav__mobile">
+          <input type="checkbox" id="nav__mobile" class="check__menu" />
 
-                <ul class="navbar__ul">
-                    <a href="">
-                        <li><i class="fa-solid fa-house"></i>Home</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-solid fa-microphone"></i>Podcasts</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-solid fa-video"></i>Videos</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-solid fa-tag"></i>Tags</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-solid fa-lightbulb"></i>FAQ</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-solid fa-heart"></i>Advertise on DEV</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-brands fa-dev"></i>About</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-solid fa-address-book"></i>Contact</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-solid fa-book"></i>Guides</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-solid fa-not-equal"></i>Software comparisons</li>
-                    </a>
-                </ul>
-                <br>
-                <br>
-                <p>Other</p>
-                <ul class="navbar__ul">
-                    <a href="">
-                        <li><i class="fa-solid fa-thumbs-up"></i>Code of Conduct</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-solid fa-file-shield"></i>Privacy Policy</li>
-                    </a>
-                    <a href="">
-                        <li><i class="fa-solid fa-eye"></i>Terms of use</li>
-                    </a>
-                </ul>
+          <label for="nav__mobile">
+            <i class="nav__mobile--iconMod fa-solid fa-bars"></i>
+          </label>
+
+          <div class="nav__mobile__responsive">
+            <div class="nav__mobile__title">
+              <p>TDA community</p>
+
+              <label for="nav__mobile">
+                <i class="nav__mobile--iconMod fa-solid fa-xmark"></i>
+              </label>
             </div>
 
-            <div class="nav__mobile">
-
-                <input type="checkbox" id="nav__mobile" class="check__menu">
-
-                <label for="nav__mobile">
-                    <i class="nav__mobile--iconMod fa-solid fa-bars"></i>
-                </label>
-
-                <div class="nav__mobile__responsive">
-
-                    <div class="nav__mobile__title">
-                        <p>TDA community</p>
-
-                        <label for="nav__mobile">
-                            <i class="nav__mobile--iconMod fa-solid fa-xmark"></i>
-                        </label>
-                    </div>
-
-                    <div class="navbar__info">
-                        <h2 class="navbar__info--title">DEV Community is a community of 1,175,465 amazing developers</h2>
-                        <p class="navbar__info--text">We're a place where coders share, stay up-to-date and grow their careers.</p>
-                        <div>
-                            <a href="" class="navbar__infoLinks navbar__infoLinks--link">Create account</a>
-                            <a href="" class="navbar__infoLinks">Login</a>
-                        </div>
-                    </div>
-
-                    <ul class="navbar__ul">
-                        <a href="">
-                            <li><i class="fa-solid fa-house"></i>Home</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-solid fa-microphone"></i>Podcasts</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-solid fa-video"></i>Videos</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-solid fa-tag"></i>Tags</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-solid fa-lightbulb"></i>FAQ</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-solid fa-heart"></i>Advertise on DEV</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-brands fa-dev"></i>About</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-solid fa-address-book"></i>Contact</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-solid fa-book"></i>Guides</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-solid fa-not-equal"></i>Software comparisons</li>
-                        </a>
-                    </ul>
-                    <br>
-                    <br>
-                    <p>Other</p>
-                    <br>
-                    <ul class="navbar__ul">
-                        <a href="">
-                            <li><i class="fa-solid fa-thumbs-up"></i>Code of Conduct</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-solid fa-file-shield"></i>Privacy Policy</li>
-                        </a>
-                        <a href="">
-                            <li><i class="fa-solid fa-eye"></i>Terms of use</li>
-                        </a>
-                    </ul>
-                </div>
+            <div class="navbar__info">
+              <h2 class="navbar__info--title">
+                DEV Community is a community of 1,175,465 amazing developers
+              </h2>
+              <p class="navbar__info--text">
+                We're a place where coders share, stay up-to-date and grow their
+                careers.
+              </p>
+              <div>
+                <a href="" class="navbar__infoLinks navbar__infoLinks--link"
+                  >Create account</a
+                >
+                <a href="" class="navbar__infoLinks">Login</a>
+              </div>
             </div>
-        </nav>
-    
-    
-        <main class="container-main">
 
-            <!-- PRIMER ARTICULO -->
-            <article class="card">
-                <img class="card-image" src="images/Daniel Gómez Zayas (2673126).png" alt="">
-                <p class="card-person">
-                    <span class="fw-bold">Michael Tharrington</span>
-                    for
-                    <span class="fw-bold">The DEV Team</span>
-                    <br>
-                    <small>18 oct</small>
-                </p>
+            <ul class="navbar__ul">
+              <a href="">
+                <li><i class="fa-solid fa-house"></i>Home</li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-microphone"></i>Podcasts</li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-video"></i>Videos</li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-tag"></i>Tags</li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-lightbulb"></i>FAQ</li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-heart"></i>Advertise on DEV</li>
+              </a>
+              <a href="">
+                <li><i class="fa-brands fa-dev"></i>About</li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-address-book"></i>Contact</li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-book"></i>Guides</li>
+              </a>
+              <a href="">
+                <li>
+                  <i class="fa-solid fa-not-equal"></i>Software comparisons
+                </li>
+              </a>
+            </ul>
+            <br />
+            <br />
+            <p>Other</p>
+            <br />
+            <ul class="navbar__ul">
+              <a href="">
+                <li><i class="fa-solid fa-thumbs-up"></i>Code of Conduct</li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-file-shield"></i>Privacy Policy</li>
+              </a>
+              <a href="">
+                <li><i class="fa-solid fa-eye"></i>Terms of use</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-                <div class="card-info">
-                    <h2 class="info-title">What was your win this week?</h2>
-                    <a class="info-tag info-tag__select" href="#">#discuss</a>
-                    <a class="info-tag" href="#">#weeklyretro</a>
+      <main class="container-main">
+        <!-- PRIMER ARTICULO -->
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/Daniel Gómez Zayas (2673126).png"
+            alt=""
+          />
+          <p class="card-person">
+            <span class="fw-bold">Michael Tharrington</span>
+            for
+            <span class="fw-bold">The DEV Team</span>
+            <br />
+            <small>18 oct</small>
+          </p>
 
-                    <div class="info-interactive">
-                        <div class="">
-                            <span class="interactive-tag">
-                              <i class="fa-solid fa-heart" style="color: #000000;"></i>
-                              104 reactions
-                            </span>
+          <div class="card-info">
+            <h2 class="info-title">What was your win this week?</h2>
+            <a class="info-tag info-tag__select" href="#">#discuss</a>
+            <a class="info-tag" href="#">#weeklyretro</a>
 
-                            <span class="interactive-tag">
-                              <i class="fa-solid fa-comment" style="color: #000000;"></i>
-                              4 comments
-                            </span>
-                        </div>
+            <div class="info-interactive">
+              <div class="">
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-heart" style="color: #000000"></i>
+                  104 reactions
+                </span>
 
-                        <small>
-                          4 min read
-                          <i class="interactive-tag fa-regular fa-bookmark" style="color: #000000;"></i>
-                        </small>
-                    </div>
-                </div>
-            </article>
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-comment" style="color: #000000"></i>
+                  4 comments
+                </span>
+              </div>
 
-            <!-- SEGUNDO ARTICULO -->
-            <article class="card">
-                <img class="card-image" src="images/Daniel Gómez Zayas (2673126).png" alt="">
-                <p class="card-person">
-                    <span class="fw-bold">Saurabh Rai</span>
-                    for
-                    <span class="fw-bold">Swirl</span>
-                    <br>
-                    <small>27 oct</small>
-                </p>
-
-                <div class="card-info">
-                    <h2 class="info-title">[Python 🐍 Mastery] Python's Object-Oriented Programming Overview and Fundamentals ⭐️</h2>
-                    <a class="info-tag" href="">#beginners</a>
-                    <a class="info-tag" href="">#python</a>
-                    <a class="info-tag" href="">#programming</a>
-                    <a class="info-tag" href="">#tutorial</a>
-                    <a class="info-tag" href="">#fundaments</a>
-
-                    <div class="info-interactive">
-                        <div class="">
-                            <span class="interactive-tag">
-                              <i class="fa-solid fa-heart" style="color: #000000;"></i>
-                              11 reactions
-                            </span>
-
-                            
-                            <span class="interactive-tag">
-                              <i class="fa-solid fa-comment" style="color: #000000;"></i>
-                              5 comments
-                            </span>
-                        </div>
-
-                        <small>
-                          2 min read
-                          <i class="interactive-tag fa-regular fa-bookmark" style="color: #000000;"></i>
-                        </small>
-                    </div>
-                </div>
-            </article>
-
-            <!-- TERCER ARTICULO -->
-            <article class="card">
-                <div class="card__person">
-                    <img class="person__image" src="images/Daniel Gómez Zayas (2673126).png" alt="">
-                    <p class="person__info">
-                        <span class="span__text">Erin A Olinick</span>
-                        for
-                        <span class="span__text">The DEV Team</span>
-                        <br>
-                        23 oct
-                    </p>
-                </div>
-
-                <div class="card__info">
-                    <h2 class="info__title">Hacktoberfest 2023: Celebrating the Home Stretch</h2>
-                    <a class="info__link info__link--select" href="">#discuss</a>
-                    <a class="info__link" href="">#hacktoberfest23</a>
-
-                    <div class="info__interactive">
-                        <div class="interactive__reactions">
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-heart" style="color: #000000;"></i>
-                                <span>5 reactions</span>
-                            </div>
-    
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-comment" style="color: #000000;"></i>
-                                <span>Add Comment</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <small>3 min read</small>
-                            <i class="icon__card fa-regular fa-bookmark" style="color: #000000;"></i>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- CUARTO ARTICULO -->
-            <article class="card">
-                <div class="card__person">
-                    <img class="person__image" src="images/Daniel Gómez Zayas (2673126).png" alt="">
-                    <p class="person__info">
-                        <span class="span__text">Dragos Nedelcu</span>
-                        <!-- for
-                        <span class="span__text">The DEV Team</span> -->
-                        <br>
-                        17 oct
-                    </p>
-                </div>
-
-                <div class="card__info">
-                    <h2 class="info__title">How To Find A Developer Job In 2023 (With Little Or No Experience) 🔥</h2>
-                    <a class="info__link" href="">#javascript</a>
-                    <a class="info__link" href="">#productivity</a>
-                    <a class="info__link" href="">#career</a>
-                    <a class="info__link" href="">#job</a>
-
-                    <div class="info__interactive">
-                        <div class="interactive__reactions">
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-heart" style="color: #000000;"></i>
-                                <span>20 reactions</span>
-                            </div>
-    
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-comment" style="color: #000000;"></i>
-                                <span>2 comments</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <small>19 min read</small>
-                            <i class="icon__card fa-regular fa-bookmark" style="color: #000000;"></i>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PRIMER ARTICULO -->
-            <article class="card">
-                <div class="card__person">
-                    <img class="person__image" src="images/Daniel Gómez Zayas (2673126).png" alt="">
-                    <p class="person__info">
-                        <span class="span__text">Michael Tharrington</span>
-                        for
-                        <span class="span__text">The DEV Team</span>
-                        <br>
-                        18 oct
-                    </p>
-                </div>
-
-                <div class="card__info">
-                    <h2 class="info__title">What was your win this week?</h2>
-                    <a class="info__link info__link--select" href="">#discuss</a>
-                    <a class="info__link" href="">#weeklyretro</a>
-
-                    <div class="info__interactive">
-                        <div class="interactive__reactions">
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-heart" style="color: #000000;"></i>
-                                <span>104 reactions</span>
-                            </div>
-    
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-comment" style="color: #000000;"></i>
-                                <span>4 comments</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <small>4 min read</small>
-                            <i class="icon__card fa-regular fa-bookmark" style="color: #000000;"></i>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- SEGUNDO ARTICULO -->
-            <article class="card">
-                <div class="card__person">
-                    <img class="person__image" src="images/Daniel Gómez Zayas (2673126).png" alt="">
-                    <p class="person__info">
-                        <span class="span__text">Saurabh Rai</span>
-                        for
-                        <span class="span__text">Swirl</span>
-                        <br>
-                        27 oct
-                    </p>
-                </div>
-
-                <div class="card__info">
-                    <h2 class="info__title">[Python 🐍 Mastery] Python's Object-Oriented Programming Overview and Fundamentals ⭐️</h2>
-                    <a class="info__link" href="">#beginners</a>
-                    <a class="info__link" href="">#python</a>
-                    <a class="info__link" href="">#programming</a>
-                    <a class="info__link" href="">#tutorial</a>
-                    <a class="info__link" href="">#fundaments</a>
-
-                    <div class="info__interactive">
-                        <div class="interactive__reactions">
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-heart" style="color: #000000;"></i>
-                                <span>11 reactions</span>
-                            </div>
-    
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-comment" style="color: #000000;"></i>
-                                <span>5 comments</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <small>2 min read</small>
-                            <i class="icon__card fa-regular fa-bookmark" style="color: #000000;"></i>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- TERCER ARTICULO -->
-            <article class="card">
-                <div class="card__person">
-                    <img class="person__image" src="images/Daniel Gómez Zayas (2673126).png" alt="">
-                    <p class="person__info">
-                        <span class="span__text">Erin A Olinick</span>
-                        for
-                        <span class="span__text">The DEV Team</span>
-                        <br>
-                        23 oct
-                    </p>
-                </div>
-
-                <div class="card__info">
-                    <h2 class="info__title">Hacktoberfest 2023: Celebrating the Home Stretch</h2>
-                    <a class="info__link info__link--select" href="">#discuss</a>
-                    <a class="info__link" href="">#hacktoberfest23</a>
-
-                    <div class="info__interactive">
-                        <div class="interactive__reactions">
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-heart" style="color: #000000;"></i>
-                                <span>5 reactions</span>
-                            </div>
-    
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-comment" style="color: #000000;"></i>
-                                <span>Add Comment</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <small>3 min read</small>
-                            <i class="icon__card fa-regular fa-bookmark" style="color: #000000;"></i>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- CUARTO ARTICULO -->
-            <article class="card">
-                <div class="card__person">
-                    <img class="person__image" src="images/Daniel Gómez Zayas (2673126).png" alt="">
-                    <p class="person__info">
-                        <span class="span__text">Dragos Nedelcu</span>
-                        <!-- for
-                        <span class="span__text">The DEV Team</span> -->
-                        <br>
-                        17 oct
-                    </p>
-                </div>
-
-                <div class="card__info">
-                    <h2 class="info__title">How To Find A Developer Job In 2023 (With Little Or No Experience) 🔥</h2>
-                    <a class="info__link" href="">#javascript</a>
-                    <a class="info__link" href="">#productivity</a>
-                    <a class="info__link" href="">#career</a>
-                    <a class="info__link" href="">#job</a>
-
-                    <div class="info__interactive">
-                        <div class="interactive__reactions">
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-heart" style="color: #000000;"></i>
-                                <span>20 reactions</span>
-                            </div>
-    
-                            <div class="icon__interactive">
-                                <i class="fa-solid fa-comment" style="color: #000000;"></i>
-                                <span>2 comments</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <small>19 min read</small>
-                            <i class="icon__card fa-regular fa-bookmark" style="color: #000000;"></i>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </main>
-
-
-        <aside class="slidebar">
-            <div class="slidebar__info">
-                <h2>#discuss</h2>
+              <small>
+                4 min read
+                <i
+                  class="interactive-tag fa-regular fa-bookmark"
+                  style="color: #000000"
+                ></i>
+              </small>
             </div>
-            <div class="slidebar__info">
-                <p>Cracking the Code: Communicating Tech to Non-Tech</p>
-                <small>1 comment</small>
-            </div>
-            <div class="slidebar__info">
-                <p>What was your win this week?</p>
-                <small>34 comments</small>
-            </div>
-            <div class="slidebar__info">
-                <p>Is Comfort Overrated?</p>
-                <small>12 comments</small>
-            </div>
-            <div class="slidebar__info">
-                <p>JS being weird again: forcibly convert synchronous statement to asynchronous with async function</p>
-                <small>13 comments</small>
-            </div>
-            <div class="slidebar__info">
-                <p>Hacktoberfest 2023: Celebrating the Home Stretch</p>
-                <small><a class="info__link info__link--select" href="">New</a></small>
-            </div>
-        </aside>
+          </div>
+        </article>
 
+        <!-- SEGUNDO ARTICULO -->
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/Daniel Gómez Zayas (2673126).png"
+            alt=""
+          />
+          <p class="card-person">
+            <span class="fw-bold">Saurabh Rai</span>
+            for
+            <span class="fw-bold">Swirl</span>
+            <br />
+            <small>27 oct</small>
+          </p>
+
+          <div class="card-info">
+            <h2 class="info-title">
+              [Python 🐍 Mastery] Python's Object-Oriented Programming Overview
+              and Fundamentals ⭐️
+            </h2>
+            <a class="info-tag info-tag__select" href="#">#beginners</a>
+            <a class="info-tag" href="#">#python</a>
+            <a class="info-tag" href="#">#programming</a>
+            <a class="info-tag" href="#">#tutorial</a>
+            <a class="info-tag" href="#">#fundaments</a>
+
+            <div class="info-interactive">
+              <div class="">
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-heart" style="color: #000000"></i>
+                  11 reactions
+                </span>
+
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-comment" style="color: #000000"></i>
+                  5 comments
+                </span>
+              </div>
+
+              <small>
+                2 min read
+                <i
+                  class="interactive-tag fa-regular fa-bookmark"
+                  style="color: #000000"
+                ></i>
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- TERCER ARTICULO -->
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/Daniel Gómez Zayas (2673126).png"
+            alt=""
+          />
+          <p class="card-person">
+            <span class="fw-bold">Erin A Olinick</span>
+            for
+            <span class="fw-bold">The DEV Team</span>
+            <br />
+            <small>23 oct</small>
+          </p>
+
+          <div class="card-info">
+            <h2 class="info-title">
+              Hacktoberfest 2023: Celebrating the Home Stretch
+            </h2>
+            <a class="info-tag info-tag__select" href="#">#discuss</a>
+            <a class="info-tag" href="#">#hacktoberfest23</a>
+
+            <div class="info-interactive">
+              <div class="">
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-heart" style="color: #000000"></i>
+                  5 reactions
+                </span>
+
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-comment" style="color: #000000"></i>
+                  Add Comment
+                </span>
+              </div>
+
+              <small>
+                3 min read
+                <i
+                  class="interactive-tag fa-regular fa-bookmark"
+                  style="color: #000000"
+                ></i>
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- CUARTO ARTICULO -->
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/Daniel Gómez Zayas (2673126).png"
+            alt=""
+          />
+          <p class="card-person">
+            <span class="fw-bold">Dragos Nedelcu</span>
+            <br />
+            <small>17 oct</small>
+          </p>
+
+          <div class="card-info">
+            <h2 class="info-title">
+              How To Find A Developer Job In 2023 (With Little Or No Experience)
+              🔥
+            </h2>
+            <a class="info-tag info-tag__select" href="#">#javascript</a>
+            <a class="info-tag" href="#">#productivity</a>
+            <a class="info-tag" href="#">#career</a>
+            <a class="info-tag" href="#">#job</a>
+
+            <div class="info-interactive">
+              <div class="">
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-heart" style="color: #000000"></i>
+                  20 reactions
+                </span>
+
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-comment" style="color: #000000"></i>
+                  2 comments
+                </span>
+              </div>
+
+              <small>
+                19 min read
+                <i
+                  class="interactive-tag fa-regular fa-bookmark"
+                  style="color: #000000"
+                ></i>
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRIMER ARTICULO -->
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/Daniel Gómez Zayas (2673126).png"
+            alt=""
+          />
+          <p class="card-person">
+            <span class="fw-bold">Michael Tharrington</span>
+            for
+            <span class="fw-bold">The DEV Team</span>
+            <br />
+            <small>18 oct</small>
+          </p>
+
+          <div class="card-info">
+            <h2 class="info-title">What was your win this week?</h2>
+            <a class="info-tag info-tag__select" href="#">#discuss</a>
+            <a class="info-tag" href="#">#weeklyretro</a>
+
+            <div class="info-interactive">
+              <div class="">
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-heart" style="color: #000000"></i>
+                  104 reactions
+                </span>
+
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-comment" style="color: #000000"></i>
+                  4 comments
+                </span>
+              </div>
+
+              <small>
+                4 min read
+                <i
+                  class="interactive-tag fa-regular fa-bookmark"
+                  style="color: #000000"
+                ></i>
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- SEGUNDO ARTICULO -->
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/Daniel Gómez Zayas (2673126).png"
+            alt=""
+          />
+          <p class="card-person">
+            <span class="fw-bold">Saurabh Rai</span>
+            for
+            <span class="fw-bold">Swirl</span>
+            <br />
+            <small>27 oct</small>
+          </p>
+
+          <div class="card-info">
+            <h2 class="info-title">
+              [Python 🐍 Mastery] Python's Object-Oriented Programming Overview
+              and Fundamentals ⭐️
+            </h2>
+            <a class="info-tag info-tag__select" href="#">#beginners</a>
+            <a class="info-tag" href="#">#python</a>
+            <a class="info-tag" href="#">#programming</a>
+            <a class="info-tag" href="#">#tutorial</a>
+            <a class="info-tag" href="#">#fundaments</a>
+
+            <div class="info-interactive">
+              <div class="">
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-heart" style="color: #000000"></i>
+                  11 reactions
+                </span>
+
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-comment" style="color: #000000"></i>
+                  5 comments
+                </span>
+              </div>
+
+              <small>
+                2 min read
+                <i
+                  class="interactive-tag fa-regular fa-bookmark"
+                  style="color: #000000"
+                ></i>
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- TERCER ARTICULO -->
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/Daniel Gómez Zayas (2673126).png"
+            alt=""
+          />
+          <p class="card-person">
+            <span class="fw-bold">Erin A Olinick</span>
+            for
+            <span class="fw-bold">The DEV Team</span>
+            <br />
+            <small>23 oct</small>
+          </p>
+
+          <div class="card-info">
+            <h2 class="info-title">
+              Hacktoberfest 2023: Celebrating the Home Stretch
+            </h2>
+            <a class="info-tag info-tag__select" href="#">#discuss</a>
+            <a class="info-tag" href="#">#hacktoberfest23</a>
+
+            <div class="info-interactive">
+              <div class="">
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-heart" style="color: #000000"></i>
+                  5 reactions
+                </span>
+
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-comment" style="color: #000000"></i>
+                  Add Comment
+                </span>
+              </div>
+
+              <small>
+                3 min read
+                <i
+                  class="interactive-tag fa-regular fa-bookmark"
+                  style="color: #000000"
+                ></i>
+              </small>
+            </div>
+          </div>
+        </article>
+
+        <!-- CUARTO ARTICULO -->
+        <article class="card">
+          <img
+            class="card-image"
+            src="images/Daniel Gómez Zayas (2673126).png"
+            alt=""
+          />
+          <p class="card-person">
+            <span class="fw-bold">Dragos Nedelcu</span>
+            <br />
+            <small>17 oct</small>
+          </p>
+
+          <div class="card-info">
+            <h2 class="info-title">
+              How To Find A Developer Job In 2023 (With Little Or No Experience)
+              🔥
+            </h2>
+            <a class="info-tag info-tag__select" href="#">#javascript</a>
+            <a class="info-tag" href="#">#productivity</a>
+            <a class="info-tag" href="#">#career</a>
+            <a class="info-tag" href="#">#job</a>
+
+            <div class="info-interactive">
+              <div class="">
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-heart" style="color: #000000"></i>
+                  20 reactions
+                </span>
+
+                <span class="interactive-tag">
+                  <i class="fa-solid fa-comment" style="color: #000000"></i>
+                  2 comments
+                </span>
+              </div>
+
+              <small>
+                19 min read
+                <i
+                  class="interactive-tag fa-regular fa-bookmark"
+                  style="color: #000000"
+                ></i>
+              </small>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <aside class="slidebar">
+        <div class="slidebar__info">
+          <h2>#discuss</h2>
+        </div>
+        <div class="slidebar__info">
+          <p>Cracking the Code: Communicating Tech to Non-Tech</p>
+          <small>1 comment</small>
+        </div>
+        <div class="slidebar__info">
+          <p>What was your win this week?</p>
+          <small>34 comments</small>
+        </div>
+        <div class="slidebar__info">
+          <p>Is Comfort Overrated?</p>
+          <small>12 comments</small>
+        </div>
+        <div class="slidebar__info">
+          <p>
+            JS being weird again: forcibly convert synchronous statement to
+            asynchronous with async function
+          </p>
+          <small>13 comments</small>
+        </div>
+        <div class="slidebar__info">
+          <p>Hacktoberfest 2023: Celebrating the Home Stretch</p>
+          <small
+            ><a class="info__link info__link--select" href="">New</a></small
+          >
+        </div>
+      </aside>
     </div>
 
-
-
     <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/8c09098255.js" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://kit.fontawesome.com/8c09098255.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

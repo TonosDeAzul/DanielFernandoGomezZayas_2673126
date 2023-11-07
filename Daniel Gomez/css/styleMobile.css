@@ -303,7 +303,7 @@ body{
 
 
 /* 
-  COMPONENTES MAIN
+  CARD
 */
 .container-main{
   grid-area: main;
@@ -315,7 +315,7 @@ body{
 .card{
   background-color: var(--light);
   outline: 1px solid rgba(29, 29, 29, .1);
-  padding: var(--sp-30);
+  padding: var(--sp-15);
   color: var(--dark);
   font-size: var(--fs-1);
   border-radius: var(--bor);
@@ -329,9 +329,6 @@ body{
 .card-person{
   display: inline-block;
   margin-bottom: var(--sp-10);
-}
-.card-info{
-    padding-left: 40px;
 }
 .info-title{
   font-size: var(--fs-2);
@@ -447,7 +444,7 @@ body{
 
 
 /* 
-  COMPONENTES FORMULARIO
+  FORMULARIO
 */
 .container-md{
   display: flex;
