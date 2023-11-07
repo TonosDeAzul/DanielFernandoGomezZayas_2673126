@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FIRTS MOBILE -->
-    <link rel="stylesheet" href="css/styleMobile.css">
+    <link rel="stylesheet" href="css/styleMobile.css" />
 
     <!-- FIRST DESKTOP -->
     <!-- <link rel="stylesheet" href="css/styleDesktop.css"> -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>GRID Layout</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <header class="header">
-        <div class="header__container">
-            <div>
-                <a href="index.html">
-                    <img class="header__logo" src="images/Daniel Gómez Zayas (2673126).png" alt="Logo">
-                </a>
-                <input id="search" class="header__search" type="search" placeholder="Search...">
-                <label class="header__searchIcon" for="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </label>
-            </div>
-            <div>
-                <a class="header__button" href="indexLogin.html">Login</a>
-                <a class="header__button header__button--mod" href="indexRegister.html">Create account</a>
-            </div>
+      <div class="header__container">
+        <div>
+          <a href="index.html">
+            <img
+              class="header__logo"
+              src="images/Daniel Gómez Zayas (2673126).png"
+              alt="Logo"
+            />
+          </a>
+          <input
+            id="search"
+            class="header__search"
+            type="search"
+            placeholder="Search..."
+          />
+          <label class="header__searchIcon" for="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
         </div>
+        <div>
+          <a class="header__button" href="indexLogin.html">Login</a>
+          <a
+            class="header__button header__button--mod"
+            href="indexRegister.html"
+            >Create account</a
+          >
+        </div>
+      </div>
     </header>
 
-
     <div class="container-md">
+      <form action="" class="container-form ta-center rounded">
+        <h2 class="form-title">Recovery Here!</h2>
 
-        <form action="" class="container-form rounded ta-center">
+        <div class="form-item ta-left">
+          <label class="form-label" for="email">Email</label>
+          <br />
+          <input class="form-input" id="email" type="email" />
+        </div>
 
-            <h2 class="form-title">Recovery Here!</h2>
-
-            <div class="form__item">
-                <label for="email">Email</label>
-                <br>
-                <input class="form-input" id="email" type="email">
-            </div>
-
-            <button class="form-button rounded" type="submit">Submit</button>
-
-        </form>
-
+        <button class="form-button rounded" type="submit">Send</button>
+      </form>
     </div>
 
-
-
     <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/8c09098255.js" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://kit.fontawesome.com/8c09098255.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
