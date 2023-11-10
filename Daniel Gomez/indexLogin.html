@@ -21,63 +21,119 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
-        <div>
+      <div class="header-container">
+        <div class="header-left">
+          <nav class="navbar-mobile">
+            <input type="checkbox" id="nav-mobile" class="check-menu" />
+
+            <label for="nav-mobile">
+              <i class="nav-mobile__icon fa-solid fa-bars"></i>
+            </label>
+
+            <div class="mobile-responsive">
+              <div class="responsive-top ma-10__bottom">
+                <p class="info-title fw-bold">TDA community</p>
+
+                <label for="nav-mobile">
+                  <i class="nav-mobile__icon fa-solid fa-xmark"></i>
+                </label>
+              </div>
+
+              <div class="card pa-15 ma-10__bottom">
+                <h2 class="card-title ma-10__bottom">
+                  DEV Community is a community of 1,175,465 amazing developers
+                </h2>
+                <p class="card-text lh-25 ma-10__bottom">
+                  We're a place where coders share, stay up-to-date and grow
+                  their careers.
+                </p>
+                <div>
+                  <a href="" class="card-link card-link__mod fw-bold"
+                    >Create account</a
+                  >
+                  <a href="" class="card-link">Login</a>
+                </div>
+              </div>
+
+              <ul>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-house"></i>Home</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-microphone"></i>Podcasts</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-video"></i>Videos</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-tag"></i>Tags</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-lightbulb"></i>FAQ</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-heart"></i>Advertise on DEV</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-brands fa-dev"></i>About</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-address-book"></i>Contact</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-book"></i>Guides</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li>
+                    <i class="fa-solid fa-not-equal"></i>Software comparisons
+                  </li>
+                </a>
+              </ul>
+              <br />
+              <br />
+              <p>Other</p>
+              <ul>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-thumbs-up"></i>Code of Conduct</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-file-shield"></i>Privacy Policy</li>
+                </a>
+                <a href="#" class="card-tag">
+                  <li><i class="fa-solid fa-eye"></i>Terms of use</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+
           <a href="index.html">
             <img
-              class="header__logo"
+              class="header-logo"
               src="images/Daniel Gómez Zayas (2673126).png"
               alt="Logo"
             />
           </a>
           <input
             id="search"
-            class="header__search"
+            class="header-search"
             type="search"
             placeholder="Search..."
           />
-          <label class="header__searchIcon" for="search">
+          <label class="header-search__icon" for="search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </label>
         </div>
+
         <div>
-          <a class="header__button" href="indexLogin.html">Login</a>
+          <a class="header-link" href="indexLogin.html">Login</a>
           <a
-            class="header__button header__button--mod"
+            class="header-link header-link__mod fw-bold"
             href="indexRegister.html"
             >Create account</a
           >
         </div>
       </div>
     </header>
-
-    <div class="container-md">
-      <form action="" class="container-form ta-center rounded">
-        <h2 class="form-title">Login Here!</h2>
-
-        <div class="form-item ta-left">
-          <label class="form-label" for="email">Email</label>
-          <br />
-          <input class="form-input" id="email" type="email" />
-        </div>
-        <div class="form-item ta-left">
-          <label class="form-label" for="password">Password</label>
-          <br />
-          <input class="form-input" id="password" type="password" />
-        </div>
-
-        <button class="form-button rounded" type="submit">Login</button>
-
-        <hr />
-
-        <a class="form-link" href="indexRegister.html"
-          >Don't you have an account? Register</a
-        >
-        <a class="form-link" href="indexRecovery.html"
-          >Did you forget your password? Recovery</a
-        >
-      </form>
-    </div>
 
     <!-- FONTAWESOME -->
     <script
