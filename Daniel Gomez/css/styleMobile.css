@@ -1,3 +1,5 @@
+@import url(../components/card.css);
+
 /* 
 
     MOBILE
@@ -173,118 +175,6 @@ body {
 .nav-mobile__icon {
   color: var(--dark);
   font-size: 24px;
-}
-
-/* 
-  CARD
-*/
-.container-main {
-  grid-area: main;
-  width: var(--w-100);
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-10);
-}
-.card {
-  background-color: var(--light);
-  outline: 1px solid rgba(29, 29, 29, 0.07);
-  padding: var(--sp-15);
-  color: var(--dark);
-  font-size: var(--fs-1);
-  border-radius: var(--bor);
-  box-shadow: var(--bshadow);
-}
-.card-top {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--sp-10);
-}
-.card-image {
-  margin-right: var(--sp-10);
-  width: var(--sp-30);
-  border-radius: var(--bor);
-}
-.card-text {
-  display: inline-block;
-  font-size: var(--fs-1);
-}
-.info-title {
-  font-size: var(--fs-2);
-  margin-bottom: var(--sp-5);
-  color: var(--dark);
-}
-.info-tag {
-  text-decoration: none;
-  color: var(--dark);
-  padding: var(--sp-5);
-  border-radius: var(--bor);
-  display: inline-block;
-}
-.info-tag:hover {
-  background-color: rgba(29, 29, 29, 0.1);
-  color: var(--dark);
-}
-.info-tag__select {
-  background-color: var(--dark);
-  color: var(--light);
-}
-.info-interactive {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: var(--sp-20);
-}
-.interactive-tag {
-  padding: var(--sp-5) var(--sp-10);
-  color: var(--dark);
-  border-radius: var(--bor);
-}
-.interactive-tag:hover {
-  background-color: rgba(29, 29, 29, 0.1);
-  color: var(--dark);
-}
-.interactive-tag__show {
-  display: none;
-}
-.card-link {
-  display: block;
-  padding: var(--sp-10) 0px;
-  border-radius: var(--bor);
-  text-align: center;
-  color: var(--dark);
-  text-decoration: none;
-  font-size: var(--fs-1);
-}
-.card-link:hover {
-  text-decoration: underline;
-  background-color: rgba(29, 29, 29, 0.1);
-}
-.card-link__mod {
-  border: 1px solid var(--dark);
-  margin-bottom: var(--sp-5);
-}
-.card-link__mod:hover {
-  background-color: var(--dark);
-  color: var(--light);
-}
-.card-tag {
-  display: block;
-  font-size: var(--fs-1);
-  color: var(--dark);
-  text-decoration: none;
-  list-style: none;
-  border-radius: var(--bor);
-  padding: var(--sp-10);
-}
-.card-tag:hover {
-  background-color: var(--dark);
-  color: var(--light);
-  text-decoration: underline;
-}
-.card-tag li i {
-  font-size: var(--sp-15);
-  width: var(--sp-25);
-  padding-right: var(--sp-5);
 }
 
 /* 
